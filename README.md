@@ -4,7 +4,7 @@
   <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h1><b>Welcome to my project 😃</b></h1>
+  <h1><b>Welcome to our project 😃</b></h1>
 
 </div>
 
