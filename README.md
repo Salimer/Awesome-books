@@ -27,8 +27,6 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🤯 Walk through video ](#walk-through)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -49,7 +47,7 @@
 # 📖 [Awesome Books] <a name="about-project"></a>
 
 
-**Awesome Books** is a project to market, sell tickets and more about a hypotetical event of Rocket League. This project is adaptable for other topics, [check out this loom recording.](https://www.loom.com/share/0d02cb2c31d24d74adf57b188ad122bd)
+**Awesome Books** is a project to showcase books arrangement using javascript 
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -80,23 +78,6 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
-
-## 🤯 Walk through video <a name="walk-through"></a>
-
-
-- [here](https://www.loom.com/share/0d02cb2c31d24d74adf57b188ad122bd)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-
-- [Live Demo Link](https://salimer.github.io/RLCS-event-template/)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
@@ -222,9 +203,8 @@ Give a ⭐️ if you like this project!
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 
-- Templete used in project provided by (Microverse).
-- Original design idea by [Cindy Shin in Behance](https://www.behance.net/adagio07).
-- A special thanks to my dear friend [Rakman Anaam](https://ig.me/m/rakmananaam) for the preview design
+- Thanks to all Microverse community
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
