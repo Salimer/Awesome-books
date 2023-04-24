@@ -101,7 +101,7 @@ Example commands:
 
 ```sh
   cd my-folder
-  git clone https://github.com/Salimer/RLCS-event-template.git
+  git clone https://github.com/Salimer/Awesome-books.git
   cd Portfolio
 ```
 
@@ -109,7 +109,7 @@ using Ubuntu:
 
 ```sh
   cd my-desired-folder
-  git clone https://github.com/Salimer/RLCS-event-template.git
+  git clone https://github.com/Salimer/Awesome-books.git
 ```
 
 For more information on how to clone or fork a repository:
@@ -127,7 +127,7 @@ To run the project, open with **index.html** with any web browser.
 For example, for Google Chrome with Ubuntu:
 
 ```sh
-  cd RLCS-event-template
+  cd Awesome-books
   google-chrome index.html
 ```
 
