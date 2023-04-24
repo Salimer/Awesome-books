@@ -177,10 +177,12 @@ Go to [🚀 Live Demo](#live-demo) to check it out.
 
 👤 **Salim Bamahfoodh**
 
+
 - GitHub: [@Salimer](https://github.com/Salimer)
-- LinkedIn: [Salim Bamahfoodh](https://www.linkedin.com/in/salim-bamahfoodh-707b74200/)
-- Youtube: [Salim Bamahfoodh](https://www.youtube.com/channel/UCGKq9eJQY2qTKRfDDbMOUyA)
-- Facebook: [Salim Bamahfoodh](https://www.facebook.com/S.Bamahfoodh/)
+
+👤 **Shakespear Samu**
+https://github.com/shakespear95
+
 
 
 <!-- FUTURE FEATURES -->
