@@ -12,7 +12,7 @@
 <div align="center">
   
   <br/>
-<h1 align="center">Rocket League Championship Series 22-23 event webpage</h1>
+<h1 align="center">Awesome Books</h1>
 </div>
 
 
