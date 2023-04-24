@@ -1,0 +1,6 @@
+const booksCollection = [
+    {
+        title: "",
+        author:
+    }
+]
