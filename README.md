@@ -33,7 +33,6 @@
   - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
-  - [Deployment](#deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -136,15 +135,7 @@ For example, for Google Chrome with Ubuntu:
 
 There are no test available for this project.
 
-### Deployment
 
-To deploy this project, use any web hosting service.
-
-This project is deployed using [GitHub Pages](https://pages.github.com/). 
-
-Go to [🚀 Live Demo](#live-demo) to check it out.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
