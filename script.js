@@ -76,7 +76,7 @@ function viewBooks() {
   const removeButtons = document.querySelectorAll('.remove-book');
   removeButtons.forEach((button) => {
     button.addEventListener('click', (event) => {
-      const id = event.target.dataset.id;
+      const { id } = event.target.dataset;
       removeBook(id);
       viewBooks();
     });
