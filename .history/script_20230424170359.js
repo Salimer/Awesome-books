@@ -21,9 +21,9 @@ function removeBook(id) {
 // Add a new book function
 function addBook(title, author) {
   const newBook = Object.create(book);
-  newBook.id = Date.now().toString(); // Generate unique ID based on timestamp
   newBook.title = title;
   newBook.author = author;
+  newBook.id = Date.now().toString();
   booksCollection.push(newBook);
 }
 
@@ -58,7 +58,6 @@ function viewBooks() {
     button.className = 'remove-book';
     button.type = 'button';
     button.textContent = 'Remove';
-    button.dataset.id = book.id; // Set the book ID as a data attribute
     bookInfo.appendChild(button);
 
     // Create and append the hr element
@@ -76,8 +75,8 @@ function viewBooks() {
   const removeButtons = document.querySelectorAll('.remove-book');
   removeButtons.forEach((button) => {
     button.addEventListener('click', (event) => {
-      const id = event.target.dataset.id;
-      removeBook(id);
+      const title = event.target.closest('.book-info').querySelector('.book-title').textContent;
+      removeBook(title);
       viewBooks();
     });
   });
