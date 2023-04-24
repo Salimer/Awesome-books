@@ -10,7 +10,7 @@
 
 
 <div align="center">
-  <img width="923" alt="Screenshot 2023-04-19 at 14 28 05" src="https://user-images.githubusercontent.com/52242629/233061307-554e3548-80de-4f58-8b55-7eab0b6bf1ef.png">
+  
   <br/>
 <h1 align="center">Rocket League Championship Series 22-23 event webpage</h1>
 </div>
@@ -46,10 +46,10 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [RLCS event webpage] <a name="about-project"></a>
+# 📖 [Awesome Books] <a name="about-project"></a>
 
 
-**RLCS event webpage** is a project to market, sell tickets and more about a hypotetical event of Rocket League. This project is adaptable for other topics, [check out this loom recording.](https://www.loom.com/share/0d02cb2c31d24d74adf57b188ad122bd)
+**Awesome Books** is a project to market, sell tickets and more about a hypotetical event of Rocket League. This project is adaptable for other topics, [check out this loom recording.](https://www.loom.com/share/0d02cb2c31d24d74adf57b188ad122bd)
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -181,7 +181,8 @@ Go to [🚀 Live Demo](#live-demo) to check it out.
 - GitHub: [@Salimer](https://github.com/Salimer)
 
 👤 **Shakespear Samu**
-https://github.com/shakespear95
+- GitHub: [@shakespear95](https://github.com/)
+
 
 
 
