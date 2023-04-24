@@ -27,15 +27,12 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🤯 Walk through video ](#walk-through)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
-  - [Deployment](#deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -49,7 +46,7 @@
 # 📖 [Awesome Books] <a name="about-project"></a>
 
 
-**Awesome Books** is a project to market, sell tickets and more about a hypotetical event of Rocket League. This project is adaptable for other topics, [check out this loom recording.](https://www.loom.com/share/0d02cb2c31d24d74adf57b188ad122bd)
+**Awesome Books** is a project to showcase books arrangement using javascript 
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -80,23 +77,6 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
-
-## 🤯 Walk through video <a name="walk-through"></a>
-
-
-- [here](https://www.loom.com/share/0d02cb2c31d24d74adf57b188ad122bd)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-
-- [Live Demo Link](https://salimer.github.io/RLCS-event-template/)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
@@ -121,7 +101,7 @@ Example commands:
 
 ```sh
   cd my-folder
-  git clone https://github.com/Salimer/RLCS-event-template.git
+  git clone https://github.com/Salimer/Awesome-books.git
   cd Portfolio
 ```
 
@@ -129,7 +109,7 @@ using Ubuntu:
 
 ```sh
   cd my-desired-folder
-  git clone https://github.com/Salimer/RLCS-event-template.git
+  git clone https://github.com/Salimer/Awesome-books.git
 ```
 
 For more information on how to clone or fork a repository:
@@ -147,7 +127,7 @@ To run the project, open with **index.html** with any web browser.
 For example, for Google Chrome with Ubuntu:
 
 ```sh
-  cd RLCS-event-template
+  cd Awesome-books
   google-chrome index.html
 ```
 
@@ -155,15 +135,7 @@ For example, for Google Chrome with Ubuntu:
 
 There are no test available for this project.
 
-### Deployment
 
-To deploy this project, use any web hosting service.
-
-This project is deployed using [GitHub Pages](https://pages.github.com/). 
-
-Go to [🚀 Live Demo](#live-demo) to check it out.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
@@ -222,9 +194,8 @@ Give a ⭐️ if you like this project!
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 
-- Templete used in project provided by (Microverse).
-- Original design idea by [Cindy Shin in Behance](https://www.behance.net/adagio07).
-- A special thanks to my dear friend [Rakman Anaam](https://ig.me/m/rakmananaam) for the preview design
+- Thanks to all Microverse community
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
