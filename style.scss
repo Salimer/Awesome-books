@@ -1,3 +1,7 @@
+* {
+  font-family: 'Comfortaa', sans-serif;
+  font-size: large;
+}
 
 .view-books {
   display: flex;
@@ -5,6 +9,8 @@
 
   h1 {
     align-self: center;
+    font-weight: 700;
+    font-size: xxx-large;
   }
 
   article {
@@ -26,6 +32,8 @@
 
     button {
       margin: 8px 0;
+      box-shadow: 6px 5px 5px 3px black;
+      cursor: pointer;
     }
   }
 }
@@ -50,6 +58,8 @@
 
     h3 {
       text-align: center;
+      font-weight: 700;
+      font-size: xxx-large;
     }
 
     .input {
@@ -62,7 +72,7 @@
         margin-bottom: 10px;
         border: 1px solid #ccc;
         border-radius: 4px;
-        width: 100%;
+        width: 170%;
 
         &:last-child {
           margin-bottom: 20px;

@@ -14,8 +14,9 @@ class BooksCollection {
   }
 
   addBook(title, author) {
-    if(title === "" || author === "") {
-      alert("Please fill both fields");
+    if (title === '' || author === '') {
+      // eslint-disable-next-line no-alert
+      alert('Please fill both fields');
     } else {
       const newBook = new Book(title, author);
       this.books.push(newBook);
