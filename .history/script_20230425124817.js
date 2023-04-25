@@ -1,4 +1,3 @@
-/* eslint-disable max-classes-per-file */
 class Book {
   constructor(title, author) {
     this.id = Date.now().toString(); // Generate unique ID based on timestamp
@@ -6,7 +5,6 @@ class Book {
     this.author = author;
   }
 }
-/* eslint-disable max-classes-per-file */
 
 class BooksCollection {
   constructor() {
@@ -74,8 +72,8 @@ class BooksCollection {
     // Adding new book
     const addBookBtn = document.querySelector('#add-book');
     addBookBtn.addEventListener('click', () => {
-      const form = document.getElementById('form');
-      const title = document.querySelector('#new-title').value;
+      const form = document.getElementById("form");
+      let title = document.querySelector('#new-title').value;
       const author = document.querySelector('#new-author').value;
       this.addBook(title, author);
       this.viewBooks();

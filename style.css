@@ -2,23 +2,29 @@
   display: flex;
   flex-direction: column;
 }
+
 .view-books h1 {
   align-self: center;
 }
+
 .view-books article {
   border: 2px solid black;
 }
+
 .view-books .book-info {
   display: flex;
   justify-content: space-between;
   padding: 0 1rem;
 }
+
 .view-books .book-info:nth-child(odd) {
-  background-color: #dddddd;
+  background-color: #ddd;
 }
+
 .view-books .book-info p {
   font-weight: 900;
 }
+
 .view-books .book-info button {
   margin: 8px 0;
 }
@@ -36,19 +42,23 @@
   flex-direction: column;
   align-items: center;
 }
+
 #form .new-book {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 #form .new-book h3 {
   text-align: center;
 }
+
 #form .new-book .input {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 #form .new-book .input input {
   padding: 8px;
   margin-bottom: 10px;
@@ -56,11 +66,11 @@
   border-radius: 4px;
   width: 100%;
 }
+
 #form .new-book .input input:last-child {
   margin-bottom: 20px;
 }
+
 #form .new-book button {
   margin-left: auto;
 }
-
-/*# sourceMappingURL=style.css.map */

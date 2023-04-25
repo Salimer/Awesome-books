@@ -1,16 +1,8 @@
-/* eslint-disable max-classes-per-file */
-class Book {
-  constructor(title, author) {
-    this.id = Date.now().toString(); // Generate unique ID based on timestamp
-    this.title = title;
-    this.author = author;
-  }
-}
-/* eslint-disable max-classes-per-file */
-
 class BooksCollection {
   constructor() {
     this.books = [];
+    this.container = document.querySelector('.books');
+    this.allBooksTitle = document.querySelector('.all-books-title');
   }
 
   addBook(title, author) {
@@ -23,10 +15,21 @@ class BooksCollection {
   }
 
   viewBooks() {
+    // Check if there are any books
+    if (this.books.length === 0) {
+      // Hide the "All Awesome Books" title and the "View Books" section
+      this.allBooksTitle.style.display = 'none';
+      this.container.style.display = 'none';
+      return;
+    } else {
+      // Show the "All Awesome Books" title and the "View Books" section
+      this.allBooksTitle.style.display = 'block';
+      this.container.style.display = 'block';
+    }
+
     // Remove all existing book elements from the container
-    const container = document.querySelector('.books');
-    while (container.firstChild) {
-      container.removeChild(container.firstChild);
+    while (this.container.firstChild) {
+      this.container.removeChild(this.container.firstChild);
     }
 
     // Update books
@@ -44,15 +47,8 @@ class BooksCollection {
       button.dataset.id = book.id; // Set the book ID as a data attribute
       bookInfo.appendChild(button);
 
-      // Add event listener to remove button
-      button.addEventListener('click', (event) => {
-        const { id } = event.target.dataset;
-        this.removeBook(id);
-        this.viewBooks();
-      });
-
       // Append the container div to the html
-      container.appendChild(bookInfo);
+      this.container.appendChild(bookInfo);
     });
 
     // Update local storage
@@ -74,12 +70,22 @@ class BooksCollection {
     // Adding new book
     const addBookBtn = document.querySelector('#add-book');
     addBookBtn.addEventListener('click', () => {
-      const form = document.getElementById('form');
-      const title = document.querySelector('#new-title').value;
+      const form = document.getElementById("form");
+      let title = document.querySelector('#new-title').value;
       const author = document.querySelector('#new-author').value;
       this.addBook(title, author);
       this.viewBooks();
       form.reset();
+    });
+
+    // Checking all the remove-book buttons
+    const removeButtons = document.querySelectorAll('.remove-book');
+    removeButtons.forEach((button) => {
+      button.addEventListener('click', (event) => {
+        const { id } = event.target.dataset;
+        this.removeBook(id);
+        this.viewBooks();
+      });
     });
   }
 }

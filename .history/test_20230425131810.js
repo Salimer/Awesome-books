@@ -1,0 +1,19 @@
+class Book {
+    constructor(title, author) {
+        this.title = title;
+        this.author = author;
+        this.id = new Date.now().toString();
+    }
+}
+
+class BooksCollection {
+    constructor() {
+        this.books = [];
+    }
+
+    addBook(title, author) {
+        this.books = new Book(title, author);
+        this.books.title = title;
+        this.books.author = author
+    }
+}

@@ -6,7 +6,6 @@ class Book {
     this.author = author;
   }
 }
-/* eslint-disable max-classes-per-file */
 
 class BooksCollection {
   constructor() {

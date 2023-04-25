@@ -1,4 +1,4 @@
-/* eslint-disable max-classes-per-file */
+
 class Book {
   constructor(title, author) {
     this.id = Date.now().toString(); // Generate unique ID based on timestamp
@@ -6,7 +6,6 @@ class Book {
     this.author = author;
   }
 }
-/* eslint-disable max-classes-per-file */
 
 class BooksCollection {
   constructor() {
