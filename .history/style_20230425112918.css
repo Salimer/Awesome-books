@@ -24,7 +24,7 @@
   width: 100%;
 }
 #form .new-book .input input:last-child {
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 #form .new-book button {
   margin-left: auto;
