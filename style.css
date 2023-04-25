@@ -1,3 +1,14 @@
+* {
+  font-family: 'Comfortaa';
+  font-size: large;
+}
+
+h1, 
+h3 {
+  font-weight: 700;
+  font-size: xxx-large;
+}
+
 .view-books {
   display: flex;
   flex-direction: column;
@@ -27,6 +38,8 @@
 
 .view-books .book-info button {
   margin: 8px 0;
+  box-shadow: 6px 5px 5px 3px black;
+  cursor: pointer;
 }
 
 .underline {
@@ -64,7 +77,7 @@
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  width: 100%;
+  width: 162%;
 }
 
 #form .new-book .input input:last-child {
