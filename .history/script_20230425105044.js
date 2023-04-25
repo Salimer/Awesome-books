@@ -65,10 +65,6 @@ function viewBooks() {
     const hr = document.createElement('hr');
     bookInfo.appendChild(hr);
 
-    // Create and append the br element
-    const br = document.createElement('br');
-    bookInfo.appendChild(br);
-
     // Append the container div to the html
     container.appendChild(bookInfo);
   });
@@ -95,8 +91,9 @@ const addBookBtn = document.querySelector('#add-book');
 addBookBtn.addEventListener('click', () => {
   const form = document.getElementById("form");
   let title = document.querySelector('#new-title').value;
-    const author = document.querySelector('#new-author').value;
-    addBook(title, author);
-    viewBooks();
-    form.reset();
+  const author = document.querySelector('#new-author').value;
+  document.querySelector('#new-title').value = "";
+  document.querySelector('#new-author').value = "";
+  addBook(title, author);
+  viewBooks();
 });

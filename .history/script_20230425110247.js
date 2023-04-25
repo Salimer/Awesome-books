@@ -66,8 +66,8 @@ function viewBooks() {
     bookInfo.appendChild(hr);
 
     // Create and append the br element
-    const br = document.createElement('br');
-    bookInfo.appendChild(br);
+    const hr = document.createElement('hr');
+    bookInfo.appendChild(hr);
 
     // Append the container div to the html
     container.appendChild(bookInfo);
