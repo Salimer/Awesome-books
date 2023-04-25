@@ -10,9 +10,8 @@
     display: flex;
     justify-content: space-between;
     padding: 0 1rem;
-
-    &:nth-child(odd) {
-      background-color: #dddddd;
+    :nth-child(odd) {
+      background-color: red;
     }
   }
 }

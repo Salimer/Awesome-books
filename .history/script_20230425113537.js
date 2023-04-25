@@ -40,8 +40,22 @@ function viewBooks() {
     // Create the container div
     const bookInfo = document.createElement('div');
     bookInfo.className = 'book-info';
-    bookInfo.innerHTML = `<p><span class="book-title">${book.title}</span>
-    <span class="book-author"> ${book.author}</span></p>`;
+    bookInfo.innerHTML = `<p><span class="book-name">${book.name}</span></p>
+    <p><span class="book-author"> ${book.author}</span></p>
+    <button class="remove">Remove</button>
+    <hr>`;
+
+    // Create and append title of the book
+    const title = document.createElement('p');
+    title.className = 'book-title';
+    title.innerHTML = '${book.title}';
+    bookInfo.appendChild(title);
+
+    // Create and append author of the book
+    const author = document.createElement('p');
+    author.className = 'book-author';
+    author.innerHTML = book.author;
+    bookInfo.appendChild(author);
 
     // Create and append the button
     const button = document.createElement('button');
@@ -50,6 +64,14 @@ function viewBooks() {
     button.textContent = 'Remove';
     button.dataset.id = book.id; // Set the book ID as a data attribute
     bookInfo.appendChild(button);
+
+    // Create and append the hr element
+    const hr = document.createElement('hr');
+    bookInfo.appendChild(hr);
+
+    // Create and append the br element
+    const br = document.createElement('br');
+    bookInfo.appendChild(br);
 
     // Append the container div to the html
     container.appendChild(bookInfo);

@@ -51,6 +51,8 @@ function viewBooks() {
     button.dataset.id = book.id; // Set the book ID as a data attribute
     bookInfo.appendChild(button);
 
+    
+
     // Append the container div to the html
     container.appendChild(bookInfo);
   });

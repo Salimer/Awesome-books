@@ -2,18 +2,9 @@
   display: flex;
   flex-direction: column;
 
-  article {
-    border: 2px solid black;
-  }
-
   div {
     display: flex;
-    justify-content: space-between;
-    padding: 0 1rem;
-
-    &:nth-child(odd) {
-      background-color: #dddddd;
-    }
+    justify-content: spac;
   }
 }
 

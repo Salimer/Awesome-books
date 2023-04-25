@@ -51,6 +51,14 @@ function viewBooks() {
     button.dataset.id = book.id; // Set the book ID as a data attribute
     bookInfo.appendChild(button);
 
+    // Create and append the hr element
+    const hr = document.createElement('hr');
+    bookInfo.appendChild(hr);
+
+    // Create and append the br element
+    const br = document.createElement('br');
+    bookInfo.appendChild(br);
+
     // Append the container div to the html
     container.appendChild(bookInfo);
   });
