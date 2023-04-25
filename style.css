@@ -2,16 +2,33 @@
   display: flex;
   flex-direction: column;
 }
+.view-books h1 {
+  align-self: center;
+}
 .view-books article {
   border: 2px solid black;
 }
-.view-books div {
+.view-books .book-info {
   display: flex;
   justify-content: space-between;
   padding: 0 1rem;
 }
-.view-books div:nth-child(odd) {
+.view-books .book-info:nth-child(odd) {
   background-color: #dddddd;
+}
+.view-books .book-info p {
+  font-weight: 900;
+}
+.view-books .book-info button {
+  margin: 8px 0;
+}
+
+.underline {
+  border-bottom: 2px solid black;
+  height: 40px;
+  width: 70%;
+  padding: 1px;
+  align-self: center;
 }
 
 #form {

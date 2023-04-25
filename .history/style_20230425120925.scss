@@ -12,7 +12,7 @@
     border: 2px solid black;
   }
 
-  .book-info {
+  div {
     display: flex;
     justify-content: space-between;
     padding: 0 1rem;
@@ -36,7 +36,6 @@
   height: 40px;
   width: 70%;
   padding: 1px;
-  align-self: center;
 }
 
 #form {

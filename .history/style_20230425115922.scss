@@ -1,18 +1,12 @@
-
-
 .view-books {
   display: flex;
   flex-direction: column;
-
-  h1 {
-    align-self: center;
-  }
 
   article {
     border: 2px solid black;
   }
 
-  .book-info {
+  div {
     display: flex;
     justify-content: space-between;
     padding: 0 1rem;
@@ -26,17 +20,9 @@
     }
 
     button {
-      margin: 8px 0;
+      margin: 4px 0;
     }
   }
-}
-
-.underline {
-  border-bottom: 2px solid black;
-  height: 40px;
-  width: 70%;
-  padding: 1px;
-  align-self: center;
 }
 
 #form {

@@ -40,7 +40,7 @@ function viewBooks() {
     // Create the container div
     const bookInfo = document.createElement('div');
     bookInfo.className = 'book-info';
-    bookInfo.innerHTML = `<p><span class="book-title">"${book.title}"</span> by <span class="book-author"> ${book.author}</span></p>`;
+    bookInfo.innerHTML = `<p><span class="book-title">${book.title}</span>   <span class="book-author"> ${book.author}</span></p>`;
 
     // Create and append the button
     const button = document.createElement('button');
