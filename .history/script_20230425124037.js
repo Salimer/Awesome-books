@@ -42,13 +42,6 @@ class BooksCollection {
       button.dataset.id = book.id; // Set the book ID as a data attribute
       bookInfo.appendChild(button);
 
-      // Add event listener to remove button
-      button.addEventListener('click', (event) => {
-        const { id } = event.target.dataset;
-        this.removeBook(id);
-        this.viewBooks();
-      });
-
       // Append the container div to the html
       container.appendChild(bookInfo);
     });
@@ -78,6 +71,16 @@ class BooksCollection {
       this.addBook(title, author);
       this.viewBooks();
       form.reset();
+    });
+
+    // Checking all the remove-book buttons
+    const removeButtons = document.querySelectorAll('.remove-book');
+    removeButtons.forEach((button) => {
+      button.addEventListener('click', (event) => {
+        const { id } = event.target.dataset;
+        this.removeBook(id);
+        this.viewBooks();
+      });
     });
   }
 }
