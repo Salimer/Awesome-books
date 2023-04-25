@@ -15,10 +15,10 @@ class BooksCollection {
 
   addBook(title, author) {
     if(title === "" || author === "") {
-      alert("Please fill both fields");
-    } else {
       const newBook = new Book(title, author);
       this.books.push(newBook);
+    } else {
+      alert("Please fill both fields");
     }
   }
 
