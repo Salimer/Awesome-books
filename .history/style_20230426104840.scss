@@ -1,0 +1,96 @@
+* {
+  font-family: 'Comfortaa', sans-serif;
+  font-size: large;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    tex
+  }
+}
+
+.view-books {
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    align-self: center;
+    font-weight: 700;
+    font-size: xxx-large;
+  }
+
+  article {
+    border: 2px solid black;
+  }
+
+  .book-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+
+    &:nth-child(odd) {
+      background-color: #ddd;
+    }
+
+    p {
+      font-weight: 900;
+    }
+
+    button {
+      margin: 8px 0;
+      box-shadow: 6px 5px 5px 3px black;
+      cursor: pointer;
+    }
+  }
+}
+
+.underline {
+  border-bottom: 2px solid black;
+  height: 40px;
+  width: 70%;
+  padding: 1px;
+  align-self: center;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .new-book {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+      text-align: center;
+      font-weight: 700;
+      font-size: xxx-large;
+    }
+
+    .input {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      input {
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        width: 170%;
+
+        &:last-child {
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    button {
+      margin-left: auto;
+    }
+  }
+}
