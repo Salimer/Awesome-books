@@ -21,21 +21,30 @@ h1 {
   border: 2px solid black;
   padding: 1rem 1rem;
 }
+
 #header a {
   text-decoration: none;
   color: black;
 }
+
 #header img {
   width: 30px;
 }
+
 #header .nav-item {
   padding: 0.5rem;
   border-left: 1px solid black;
 }
+
 #header #close-icon {
   align-self: flex-end;
   filter: invert(100);
 }
+
+#header #list-nav {
+  border: transparent;
+}
+
 #header .popup {
   position: fixed;
   height: 100vh;
@@ -48,6 +57,7 @@ h1 {
   background-color: rgba(0, 0, 0, 0.9);
   z-index: 9999;
 }
+
 #header .popup a {
   padding: 1rem 2rem;
   color: #fff;
@@ -58,20 +68,25 @@ h1 {
   display: flex;
   flex-direction: column;
 }
+
 .view-books article {
   border: 2px solid black;
 }
+
 .view-books .book-info {
   display: flex;
   justify-content: space-between;
   padding: 0 1rem;
 }
+
 .view-books .book-info:nth-child(odd) {
   background-color: #ddd;
 }
+
 .view-books .book-info p {
   font-weight: 900;
 }
+
 .view-books .book-info button {
   margin: 8px 0;
   box-shadow: 6px 5px 5px 3px black;
@@ -83,16 +98,19 @@ h1 {
   flex-direction: column;
   align-items: center;
 }
+
 #form .new-book {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 #form .new-book .input {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 #form .new-book .input input {
   padding: 8px;
   margin-bottom: 10px;
@@ -100,9 +118,11 @@ h1 {
   border-radius: 4px;
   width: 170%;
 }
+
 #form .new-book .input input:last-child {
   margin-bottom: 20px;
 }
+
 #form .new-book button {
   margin-left: auto;
 }
@@ -113,10 +133,12 @@ h1 {
   align-items: center;
   line-height: 1.6rem;
 }
+
 .new-contact-info #time {
   padding: 1rem;
   align-self: flex-end;
 }
+
 .new-contact-info .contact-text {
   padding: 1rem 0;
 }
@@ -128,9 +150,8 @@ h1 {
   border: 2px solid black;
   margin-top: 1rem;
 }
+
 #footer p + p {
   font-size: small;
   width: 50%;
 }
-
-/*# sourceMappingURL=style.css.map */

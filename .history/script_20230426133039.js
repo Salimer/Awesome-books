@@ -1,4 +1,3 @@
-/* eslint-disable max-classes-per-file */
 // Define page navigation
 const hamburger = document.querySelector('.hamburger');
 const closeIcon = document.querySelector('#close-icon');
@@ -6,7 +5,6 @@ const dropDownNav = document.querySelector('.navigation-menu');
 const listNav = document.querySelector('#list-nav');
 const addNewNav = document.querySelector('#add-new-nav');
 const contactNav = document.querySelector('#contact-nav');
-/* eslint-disable max-classes-per-file */
 
 // Define page sections
 const viewBooksSection = document.querySelector('.view-books');

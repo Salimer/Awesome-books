@@ -1,14 +1,12 @@
-/* eslint-disable max-classes-per-file */
-// Define page navigation
+// Define page navigation 
 const hamburger = document.querySelector('.hamburger');
-const closeIcon = document.querySelector('#close-icon');
+const closeIcon = document.querySelector('#close-icon')
 const dropDownNav = document.querySelector('.navigation-menu');
 const listNav = document.querySelector('#list-nav');
 const addNewNav = document.querySelector('#add-new-nav');
 const contactNav = document.querySelector('#contact-nav');
-/* eslint-disable max-classes-per-file */
 
-// Define page sections
+// Define page sections 
 const viewBooksSection = document.querySelector('.view-books');
 const addBookFormSection = document.querySelector('.add-book-form');
 const newContactSection = document.querySelector('.new-contact-info');
@@ -59,27 +57,22 @@ closeIcon.addEventListener('click', () => {
 });
 
 // Query selector for mobile navigation
-if (window.matchMedia('(min-width: 768px)').matches) {
+if (window.matchMedia("(min-width: 768px)").matches) {
   hamburger.classList.add('hide');
   dropDownNav.classList.remove('hide');
 
-  // List event listener
-  listNav.addEventListener('click', () => {
-    dropDownNav.classList.remove('hide');
-  });
-
-  // New book event listener
-  addNewNav.addEventListener('click', () => {
-    dropDownNav.classList.remove('hide');
-  });
   // Contact section event listener
-  contactNav.addEventListener('click', () => {
-    dropDownNav.classList.remove('hide');
-  });
+contactNav.addEventListener('click', () => {
+  viewBooksSection.classList.add('hide');
+  addBookFormSection.classList.add('hide');
+  newContactSection.classList.remove('hide');
+  dropDownNav.classList.add('navigation-menu', );
+  dropDownNav.classList.remove('popup');
+  closeIcon.classList.add('hide');
+});
 }
 
 /* Books list page --------------------------------*/
-
 /* eslint-disable max-classes-per-file */
 class Book {
   constructor(title, author) {
@@ -180,15 +173,15 @@ const timeContact = document.querySelector('#time');
 // timeContact.innerHTML = Date.now();
 
 const now = new Date();
-const options = {
-  month: 'long',
-  day: 'numeric',
-  year: 'numeric',
-  hour: 'numeric',
-  minute: 'numeric',
-  second: 'numeric',
-  hour12: true,
-  timeZone: 'Europe/London', // Change to your desired timezone
-};
-const datetime = now.toLocaleString('en-US', options);
-timeContact.textContent = datetime;
+      const options = {
+        month: 'long',
+        day: 'numeric',
+        year: 'numeric',
+        hour: 'numeric',
+        minute: 'numeric',
+        second: 'numeric',
+        hour12: true,
+        timeZone: 'Europe/London' // Change to your desired timezone
+      };
+      const datetime = now.toLocaleString('en-US', options);
+      timeContact.textContent = datetime;

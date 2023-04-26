@@ -12,6 +12,8 @@ h1 {
 
 .hide {
   display: none !important;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
 
 #header {
@@ -38,10 +40,6 @@ h1 {
   #close-icon {
     align-self: flex-end;
     filter: invert(100);
-  }
-
-  #list-nav {
-    border: transparent;
   }
 
   .popup {
