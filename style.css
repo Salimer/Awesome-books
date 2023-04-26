@@ -130,6 +130,8 @@ h1 {
 
 #form .new-book button {
   margin-left: auto;
+  box-shadow: 6px 5px 5px 3px black;
+  cursor: pointer;
 }
 
 .new-contact-info {
