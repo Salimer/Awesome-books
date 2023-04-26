@@ -31,6 +31,25 @@ h1 {
   padding: 0.5rem;
   border-left: 1px solid black;
 }
+#header #close-icon {
+  align-self: flex-end;
+}
+#header .popup {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+}
+#header .popup a {
+  padding: 2rem 0;
+}
+
 .view-books {
   display: flex;
   flex-direction: column;

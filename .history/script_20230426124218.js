@@ -151,4 +151,3 @@ booksCollection.init();
 
 /* Contact page ----------------------------------*/
 const timeContact = document.querySelector('#time');
-timeContact.innerHTML = Date.now();

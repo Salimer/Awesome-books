@@ -34,25 +34,14 @@ h1 {
     border-left: 1px solid black;
   }
 
-  #close-icon {
-    align-self: flex-end;
-  }
-
   .popup {
-    position: fixed;
+    // position: fixed;
     height: 100vh;
     width: 100vw;
-    top: 0;
-    left: 0;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 9999;
-
-    a {
-      padding: 2rem 0;
-    }
+    background-color: gray;
   }
 }
 

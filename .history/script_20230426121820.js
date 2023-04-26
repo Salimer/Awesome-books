@@ -1,6 +1,6 @@
 // Define page navigation 
 const hamburger = document.querySelector('.hamburger');
-const closeIcon = document.querySelector('#close-icon')
+const closeicon = document.querySelector('.close')
 const dropDownNav = document.querySelector('.navigation-menu');
 const listNav = document.querySelector('#list-nav');
 const addNewNav = document.querySelector('#add-new-nav');
@@ -35,16 +35,7 @@ contactNav.addEventListener('click', () => {
 
 // Hamburger event listener
 hamburger.addEventListener('click', () => {
-  dropDownNav.classList.remove('navigation-menu', 'hide');
-  dropDownNav.classList.add('popup');
-  closeIcon.classList.remove('hide');
-});
 
-// Close icon event listener
-closeIcon.addEventListener('click', () => {
-  dropDownNav.classList.add('navigation-menu', 'hide');
-  dropDownNav.classList.remove('popup');
-  closeIcon.classList.add('hide');
 });
 
 // Query selector for mobile navigation
@@ -53,7 +44,6 @@ if (window.matchMedia("(min-width: 768px)").matches) {
   dropDownNav.classList.remove('hide');
 }
 
-/* Books list page --------------------------------*/
 /* eslint-disable max-classes-per-file */
 class Book {
   constructor(title, author) {
@@ -147,8 +137,3 @@ class BooksCollection {
 
 const booksCollection = new BooksCollection();
 booksCollection.init();
-/* -------------------------------------------
-
-/* Contact page ----------------------------------*/
-const timeContact = document.querySelector('#time');
-timeContact.innerHTML = Date.now();

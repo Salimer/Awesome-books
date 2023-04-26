@@ -53,7 +53,6 @@ if (window.matchMedia("(min-width: 768px)").matches) {
   dropDownNav.classList.remove('hide');
 }
 
-/* Books list page --------------------------------*/
 /* eslint-disable max-classes-per-file */
 class Book {
   constructor(title, author) {
@@ -147,8 +146,3 @@ class BooksCollection {
 
 const booksCollection = new BooksCollection();
 booksCollection.init();
-/* -------------------------------------------
-
-/* Contact page ----------------------------------*/
-const timeContact = document.querySelector('#time');
-timeContact.innerHTML = Date.now();
