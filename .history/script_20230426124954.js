@@ -16,30 +16,21 @@ const newContactSection = document.querySelector('.new-contact-info');
 listNav.addEventListener('click', () => {
   viewBooksSection.classList.remove('hide');
   addBookFormSection.classList.add('hide');
-  newContactSection.classList.add('hide');
-  dropDownNav.classList.add('navigation-menu', 'hide');
-  dropDownNav.classList.remove('popup');
-  closeIcon.classList.add('hide');
+  newContactSection.classList.add('hide')
 });
 
 // New book event listener
 addNewNav.addEventListener('click', () => {
   viewBooksSection.classList.add('hide');
   addBookFormSection.classList.remove('hide');
-  newContactSection.classList.add('hide');
-  dropDownNav.classList.add('navigation-menu', 'hide');
-  dropDownNav.classList.remove('popup');
-  closeIcon.classList.add('hide');
+  newContactSection.classList.add('hide')
 });
 
 // Contact section event listener
 contactNav.addEventListener('click', () => {
   viewBooksSection.classList.add('hide');
   addBookFormSection.classList.add('hide');
-  newContactSection.classList.remove('hide');
-  dropDownNav.classList.add('navigation-menu', 'hide');
-  dropDownNav.classList.remove('popup');
-  closeIcon.classList.add('hide');
+  newContactSection.classList.remove('hide')
 });
 
 // Hamburger event listener
@@ -156,7 +147,7 @@ class BooksCollection {
 
 const booksCollection = new BooksCollection();
 booksCollection.init();
-/* -------------------------------------------*/
+/* -------------------------------------------
 
 /* Contact page ----------------------------------*/
 const timeContact = document.querySelector('#time');
@@ -171,7 +162,7 @@ const now = new Date();
         minute: 'numeric',
         second: 'numeric',
         hour12: true,
-        timeZone: 'Europe/London' // Change to your desired timezone
+        timeZone: 'UTC+1' // Change to your desired timezone
       };
       const datetime = now.toLocaleString('en-US', options);
       timeContact.textContent = datetime;

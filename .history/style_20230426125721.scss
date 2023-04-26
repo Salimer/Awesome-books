@@ -7,7 +7,6 @@ h1 {
   align-self: center;
   font-weight: 700;
   font-size: xxx-large;
-  line-height: 3rem;
 }
 
 .hide {
@@ -37,7 +36,6 @@ h1 {
 
   #close-icon {
     align-self: flex-end;
-    filter: invert(100);
   }
 
   .popup {
@@ -49,7 +47,7 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.8);
     z-index: 9999;
 
     a {

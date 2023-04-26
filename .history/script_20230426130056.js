@@ -17,29 +17,21 @@ listNav.addEventListener('click', () => {
   viewBooksSection.classList.remove('hide');
   addBookFormSection.classList.add('hide');
   newContactSection.classList.add('hide');
-  dropDownNav.classList.add('navigation-menu', 'hide');
-  dropDownNav.classList.remove('popup');
-  closeIcon.classList.add('hide');
+  
 });
 
 // New book event listener
 addNewNav.addEventListener('click', () => {
   viewBooksSection.classList.add('hide');
   addBookFormSection.classList.remove('hide');
-  newContactSection.classList.add('hide');
-  dropDownNav.classList.add('navigation-menu', 'hide');
-  dropDownNav.classList.remove('popup');
-  closeIcon.classList.add('hide');
+  newContactSection.classList.add('hide')
 });
 
 // Contact section event listener
 contactNav.addEventListener('click', () => {
   viewBooksSection.classList.add('hide');
   addBookFormSection.classList.add('hide');
-  newContactSection.classList.remove('hide');
-  dropDownNav.classList.add('navigation-menu', 'hide');
-  dropDownNav.classList.remove('popup');
-  closeIcon.classList.add('hide');
+  newContactSection.classList.remove('hide')
 });
 
 // Hamburger event listener
