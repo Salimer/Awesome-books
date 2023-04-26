@@ -1,6 +1,5 @@
 // Define page navigation 
-const hamburger = document.querySelector('.hamburger');
-const dropDownNav = document.querySelector('.navigation-menu');
+const hamburger = document.querySelector('.hamburger')
 const listNav = document.querySelector('#list-nav');
 const addNewNav = document.querySelector('#add-new-nav');
 const contactNav = document.querySelector('#contact-nav');
@@ -34,8 +33,7 @@ contactNav.addEventListener('click', () => {
 
 // Query selector for mobile navigation
 if (window.matchMedia("(min-width: 768px)").matches) {
-  hamburger.classList.add('hide');
-  dropDownNav.classList.remove('hide');
+ 
 }
 
 /* eslint-disable max-classes-per-file */

@@ -16,6 +16,7 @@ h1 {
 #header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border: 2px solid black;
   padding: 1rem 1rem;
 }
@@ -23,11 +24,13 @@ h1 {
   text-decoration: none;
   color: black;
 }
+#header img {
+  width: 30px;
+}
 #header .nav-item {
   padding: 0.5rem;
   border-left: 1px solid black;
 }
-
 .view-books {
   display: flex;
   flex-direction: column;
