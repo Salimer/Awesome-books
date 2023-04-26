@@ -21,6 +21,7 @@ h1 {
 }
 #header a {
   text-decoration: none;
+  color: black;
 }
 #header .nav-item {
   padding: 0.5rem;
@@ -49,14 +50,6 @@ h1 {
   margin: 8px 0;
   box-shadow: 6px 5px 5px 3px black;
   cursor: pointer;
-}
-
-.underline {
-  border-bottom: 2px solid black;
-  height: 40px;
-  width: 70%;
-  padding: 1px;
-  align-self: center;
 }
 
 #form {
