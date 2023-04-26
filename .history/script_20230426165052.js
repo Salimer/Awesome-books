@@ -177,6 +177,7 @@ booksCollection.init();
 
 /* Contact page ----------------------------------*/
 const timeContact = document.querySelector('#time');
+
 const now = new Date();
 const options = {
   month: 'long',
@@ -188,5 +189,5 @@ const options = {
   hour12: true,
   timeZone: 'Europe/London', // Change to your desired timezone
 };
-const dateTime = now.toLocaleString('en-US', options);
-timeContact.textContent = dateTime;
+const datetime = now.toLocaleString('en-US', options);
+timeContact.textContent = datetime;

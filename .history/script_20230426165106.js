@@ -177,6 +177,7 @@ booksCollection.init();
 
 /* Contact page ----------------------------------*/
 const timeContact = document.querySelector('#time');
+
 const now = new Date();
 const options = {
   month: 'long',
