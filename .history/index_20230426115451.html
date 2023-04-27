@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@400;500;600;700&family=Comfortaa:wght@300;400;500;600;700&family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header id="header">
+        <a href="#">Awesome books</a>
+        <div class="hamburger"><img src="Assets/nav.svg"> </div>
+        <div class="dropdown-nav-menu">
+            <a id="list-nav" class="nav-item" href="#">List</a>
+            <a id="add-new-nav" class="nav-item" href="#">Add new</a>
+            <a id="contact-nav" class="nav-item" href="#">Contact</a>
+        </div>
+    </header>
+    <main>
+        <section class="view-books hide">
+            <h1>All Awesome books</h1>
+            <article class="books">
+                
+            </article>
+        </section>
+        <section class="add-book-form">
+            <form id="form">
+                <article class="new-book">
+                    <h1>Add a new book</h3>
+                    <div class="input">
+                        <input id="new-title" name="title" placeholder="Title"><br><br>
+                        <input id="new-author" name="author" placeholder="Author"><br><br>
+                    </div>
+                    <button id="add-book" type="submit">Add</button>
+                </article>
+            </form>
+        </section>
+        <section class="new-contact-info hide">
+            <div id="time">March 19th 2021, 9:25:32 am</div>
+            <h1>Contact information</h1>
+            <p class="contact-text">Do have any questions or you just want to say "Hello"?<br>You can reach out to us!</p>
+            <ul class="contact-details">
+                <li>Our e-mail: mail@mail.com</li>
+                <li>Our phone number: 0043586534422</li>
+                <li>Our address: Streetname 22, 84503 City, Country</li>
+            </ul>
+        </section>
+    </main>
+    <footer id="footer">
+        <p>Cofyright</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing  nesciunt, doloremque adipisci delectus temporibus quia. Doloribus?</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

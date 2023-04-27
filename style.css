@@ -3,15 +3,76 @@
   font-size: large;
 }
 
-.view-books {
-  display: flex;
-  flex-direction: column;
-}
-
-.view-books h1 {
+h1 {
   align-self: center;
   font-weight: 700;
   font-size: xxx-large;
+  line-height: 3rem;
+}
+
+.hide {
+  display: none !important;
+}
+
+#time {
+  margin-top: 1em;
+  margin-right: 0.3rem;
+  text-align: end;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid black;
+  padding: 1rem 1rem;
+}
+
+#header a {
+  text-decoration: none;
+  color: black;
+}
+
+#header img {
+  width: 30px;
+}
+
+#header .nav-item {
+  padding: 0.5rem;
+  border-left: 1px solid black;
+}
+
+#header #close-icon {
+  align-self: flex-end;
+  filter: invert(100);
+}
+
+#header #list-nav {
+  border: transparent;
+}
+
+#header .popup {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 9999;
+}
+
+#header .popup a {
+  padding: 1rem 2rem;
+  color: #fff;
+  font-size: 30px;
+}
+
+.view-books {
+  display: flex;
+  flex-direction: column;
 }
 
 .view-books article {
@@ -38,14 +99,6 @@
   cursor: pointer;
 }
 
-.underline {
-  border-bottom: 2px solid black;
-  height: 40px;
-  width: 70%;
-  padding: 1px;
-  align-self: center;
-}
-
 #form {
   display: flex;
   flex-direction: column;
@@ -56,12 +109,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-#form .new-book h3 {
-  text-align: center;
-  font-weight: 700;
-  font-size: xxx-large;
 }
 
 #form .new-book .input {
@@ -84,4 +131,35 @@
 
 #form .new-book button {
   margin-left: auto;
+  box-shadow: 6px 5px 5px 3px black;
+  cursor: pointer;
+}
+
+.new-contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.6rem;
+}
+
+.new-contact-info #time {
+  padding: 1rem;
+  align-self: flex-end;
+}
+
+.new-contact-info .contact-text {
+  padding: 1rem 0;
+}
+
+#footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid black;
+  margin-top: 1rem;
+}
+
+#footer p + p {
+  font-size: small;
+  width: 50%;
 }
