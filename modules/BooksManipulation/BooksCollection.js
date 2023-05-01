@@ -5,7 +5,7 @@ class BooksCollection {
       this.books = [];
     }
   
-    addBook(title, author) {
+    addBook = (title, author) => {
       if (title === '' || author === '') {
         // eslint-disable-next-line no-alert
         alert('Please fill both fields');
@@ -15,11 +15,11 @@ class BooksCollection {
       }
     }
   
-    removeBook(id) {
+    removeBook = (id) => {
       this.books = this.books.filter((book) => book.id !== id);
     }
   
-    viewBooks() {
+    viewBooks = () => {
       // Remove all existing book elements from the container
       const container = document.querySelector('.books');
       while (container.firstChild) {
@@ -56,11 +56,11 @@ class BooksCollection {
       this.saveBooks();
     }
   
-    saveBooks() {
+    saveBooks = () => {
       localStorage.setItem('books', JSON.stringify(this.books));
     }
   
-    loadBooks() {
+    loadBooks = () => {
       this.books = JSON.parse(localStorage.getItem('books')) || [];
     }
   
