@@ -11,4 +11,7 @@ const viewBooksSection = document.querySelector('.view-books');
 const addBookFormSection = document.querySelector('.add-book-form');
 const newContactSection = document.querySelector('.new-contact-info');
 
-export { hamburger, closeIcon, dropDownNav, listNav, addNewNav, contactNav, viewBooksSection, addBookFormSection, newContactSection };
+export {
+  hamburger, closeIcon, dropDownNav, listNav, addNewNav, contactNav, viewBooksSection,
+  addBookFormSection, newContactSection,
+};
