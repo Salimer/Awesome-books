@@ -3,68 +3,20 @@
 import { hamburger, closeIcon, dropDownNav, listNav, addNewNav, contactNav, viewBooksSection, addBookFormSection, newContactSection } from './modules/Initialisations.js';
 
 // List event listener
-listNav.addEventListener('click', () => {
-  viewBooksSection.classList.remove('hide');
-  addBookFormSection.classList.add('hide');
-  newContactSection.classList.add('hide');
-  dropDownNav.classList.add('navigation-menu', 'hide');
-  dropDownNav.classList.remove('popup');
-  closeIcon.classList.add('hide');
-});
+import { handleAddNewNavClick, handleCloseIconClick, handleContactNavClick, handleHamburgerClick, handleListNavClick } from './modules/Navigation.js';
+listNav.addEventListener('click', handleListNavClick);
 
 // New book event listener
-addNewNav.addEventListener('click', () => {
-  viewBooksSection.classList.add('hide');
-  addBookFormSection.classList.remove('hide');
-  newContactSection.classList.add('hide');
-  dropDownNav.classList.add('navigation-menu', 'hide');
-  dropDownNav.classList.remove('popup');
-  closeIcon.classList.add('hide');
-});
+addNewNav.addEventListener('click', handleAddNewNavClick);
 
 // Contact section event listener
-contactNav.addEventListener('click', () => {
-  viewBooksSection.classList.add('hide');
-  addBookFormSection.classList.add('hide');
-  newContactSection.classList.remove('hide');
-  dropDownNav.classList.add('navigation-menu', 'hide');
-  dropDownNav.classList.remove('popup');
-  closeIcon.classList.add('hide');
-});
+contactNav.addEventListener('click', handleContactNavClick);
 
 // Hamburger event listener
-hamburger.addEventListener('click', () => {
-  dropDownNav.classList.remove('navigation-menu', 'hide');
-  dropDownNav.classList.add('popup');
-  closeIcon.classList.remove('hide');
-});
+hamburger.addEventListener('click', handleHamburgerClick);
 
 // Close icon event listener
-closeIcon.addEventListener('click', () => {
-  dropDownNav.classList.add('navigation-menu', 'hide');
-  dropDownNav.classList.remove('popup');
-  closeIcon.classList.add('hide');
-});
-
-// Query selector for mobile navigation
-if (window.matchMedia('(min-width: 768px)').matches) {
-  hamburger.classList.add('hide');
-  dropDownNav.classList.remove('hide');
-
-  // List event listener
-  listNav.addEventListener('click', () => {
-    dropDownNav.classList.remove('hide');
-  });
-
-  // New book event listener
-  addNewNav.addEventListener('click', () => {
-    dropDownNav.classList.remove('hide');
-  });
-  // Contact section event listener
-  contactNav.addEventListener('click', () => {
-    dropDownNav.classList.remove('hide');
-  });
-}
+closeIcon.addEventListener('click', handleCloseIconClick);
 
 /* Books list page --------------------------------*/
 import BooksCollection from './modules/BooksManipulation/BooksCollection.js';
@@ -86,3 +38,23 @@ const options = {
 };
 const dateTime = now.toLocaleString('en-US', options);
 timeContact.textContent = dateTime;
+
+// Query selector for mobile navigation
+if (window.matchMedia('(min-width: 768px)').matches) {
+  hamburger.classList.add('hide');
+  dropDownNav.classList.remove('hide');
+
+  // List event listener
+  listNav.addEventListener('click', () => {
+    dropDownNav.classList.remove('hide');
+  });
+
+  // New book event listener
+  addNewNav.addEventListener('click', () => {
+    dropDownNav.classList.remove('hide');
+  });
+  // Contact section event listener
+  contactNav.addEventListener('click', () => {
+    dropDownNav.classList.remove('hide');
+  });
+}
