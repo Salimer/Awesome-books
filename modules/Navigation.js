@@ -1,4 +1,4 @@
-import { hamburger, closeIcon, dropDownNav, listNav, addNewNav, contactNav, viewBooksSection, addBookFormSection, newContactSection } from './Initialisations.js';
+import { closeIcon, dropDownNav, viewBooksSection, addBookFormSection, newContactSection } from './Initialisations.js';
 
 
 export const handleListNavClick = () => {

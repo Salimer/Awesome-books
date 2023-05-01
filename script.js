@@ -24,37 +24,14 @@ const booksCollection = new BooksCollection();
 booksCollection.init();
 
 /* Contact page ----------------------------------*/
-const timeContact = document.querySelector('#time');
-const now = new Date();
-const options = {
-  month: 'long',
-  day: 'numeric',
-  year: 'numeric',
-  hour: 'numeric',
-  minute: 'numeric',
-  second: 'numeric',
-  hour12: true,
-  timeZone: 'Europe/London', // Change to your desired timezone
-};
-const dateTime = now.toLocaleString('en-US', options);
-timeContact.textContent = dateTime;
+import { updateContactTime } from './modules/Contact.js';
+document.addEventListener('DOMContentLoaded', () => {
+  updateContactTime();
+});
 
-// Query selector for mobile navigation
-if (window.matchMedia('(min-width: 768px)').matches) {
-  hamburger.classList.add('hide');
-  dropDownNav.classList.remove('hide');
 
-  // List event listener
-  listNav.addEventListener('click', () => {
-    dropDownNav.classList.remove('hide');
-  });
+// Query selector for desktop navigation
+import { setupDesktopNavigation } from './modules/DesktopNavigation.js';
 
-  // New book event listener
-  addNewNav.addEventListener('click', () => {
-    dropDownNav.classList.remove('hide');
-  });
-  // Contact section event listener
-  contactNav.addEventListener('click', () => {
-    dropDownNav.classList.remove('hide');
-  });
-}
+// Call the function to set up the mobile navigation
+setupDesktopNavigation();
