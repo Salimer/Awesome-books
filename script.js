@@ -13,7 +13,7 @@ import {
 import BooksCollection from './modules/BooksManipulation/BooksCollection.js';
 
 /* Contact page ----------------------------------*/
-import updateContactTime from './modules/Contact.js';
+import updateContactTime from './modules/TimeFunction.js';
 
 // Query selector for desktop navigation
 import setupDesktopNavigation from './modules/DesktopNavigation.js';
