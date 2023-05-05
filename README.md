@@ -27,6 +27,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -74,6 +75,13 @@
 - **Fast access to social media and other ways of contact**
 - **Easy to the eyes and cultivating at the same time**
 - **Dynamic creation of content** 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+
+- [Live Demo Link](https://salimer.github.io/Awesome-books/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
